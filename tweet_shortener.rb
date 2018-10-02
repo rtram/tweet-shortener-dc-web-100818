@@ -22,8 +22,6 @@ def word_substituter(tweet)
   tweet.collect! do |i|
     if dictionary.key? ("#{i}")
       dictionary[i]
-    else
-      i
     end 
   end
   tweet.join(" ")
